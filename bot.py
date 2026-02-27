@@ -28,7 +28,7 @@ async def chat(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     await update.message.reply_text(reply)
 
-app = ApplicationBuilder().token(8727504253:AAHPsBlN743fjGAnB6qdRdr5KPBPX_hZSzc).build()
+app = ApplicationBuilder().token("BOT_TOKEN").build()
 app.add_handler(MessageHandler(filters.TEXT, chat))
 
 app.run_polling()
